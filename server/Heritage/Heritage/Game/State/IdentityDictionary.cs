@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization;
 
 namespace Heritage.Game.State
 {
 	[Serializable]
+	[DataContract]
 	public class IdentityDictionary<T>  where T : IWorldObject, new()
 	{
+		[DataMember]
 		public Dictionary<uint, T> concrete = new Dictionary<uint, T>();
 
+		[DataMember]
 		public uint currentId = 1;
 
 		private World m_world;
