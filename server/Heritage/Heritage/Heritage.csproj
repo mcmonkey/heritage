@@ -43,8 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game\State\Character.cs" />
+    <Compile Include="Game\GameContext.cs" />
+    <Compile Include="Game\State\IdentityDictionary.cs" />
+    <Compile Include="Game\State\Player.cs" />
+    <Compile Include="Game\State\World.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transactions\Transaction.cs" />
+    <Compile Include="Game\State\IWorldObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game\Operations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
